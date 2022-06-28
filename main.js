@@ -190,3 +190,29 @@ parseInt(element,index(NAN),NAN) when numbers
 // const numbers = strings.map(parseInt);
 
 // console.log(numbers);
+// const cssClasses = ['btn', 'btn-primary', 'btn-active'];
+// const btnClass = cssClasses.join(' ');
+
+// console.log(btnClass);
+// const title='omnia array is control';
+// const url=title.split(' ').join("*").toLocaleLowerCase();
+// console.log(url);
+//concat() mergearray
+// let odds = [1,3,5];
+// let evens = [2,4,6];
+// // merge odds and evens array
+// let combined = odds.concat(evens);
+
+// console.log('Result:', combined);
+// console.log('Odds:', odds);
+// let odds = [1,3,5];
+// let evens = [2,4,6];
+// // merge odds and evens array
+// let combined = [].concat(odds, evens);
+
+// console.log(combined);
+// let upper  = ['A','B','C'];
+// let lower  = ['a','b','c'];
+// let digits = [1,2,3];
+// let alphanumerics = upper.concat(lower, digits);
+// console.log(alphanumerics)
