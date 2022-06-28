@@ -131,7 +131,62 @@ push => 1)add one or more at the end of Array
 //includes dont compare between positive and negative
 //High order method in the array()
 /*
-map()
+map()=>transforming Element in an array
 filter()
 
 */
+// let circles=[
+//     10,20,30,50
+// ];
+// // let areas=[];
+// let area=0;
+// for(let i=0;i<circles.length;i++){
+//     area=Math.floor(Math.PI*circles[i]*circles[i]);
+//     areas.push(area);
+// }
+// console.log(areas);
+// function circleArea(radius){
+//     return Math.floor(Math.PI*radius*radius);
+// }
+// let areas=circles.map(circleArea);
+// console.log(areas);
+// const array1=[1,4,9,16];
+// const map1=array1.map(x=>x*2);
+// console.log(map1);
+// const numbers=[1,4,9];
+// const roots=numbers.map((num)=>Math.sqrt(num));
+// console.log(roots);
+// const kvArray = [{ key: 1, value: 10 },
+//     { key: 2, value: 20 },
+//     { key: 3, value: 30 }];
+//     const reformattedArray = kvArray.map(({ key, value}) => ({[key]:value }));
+//     console.log(reformattedArray);
+// const numbers = [1, 4, 9];
+// const doubles = numbers.map((num) => num * 2);
+
+//charCodeAt() a String to get an array of bytes in the ASCII encoding;
+// const map=Array.prototype.map;
+// const charCodes=map.call('omnia',(x)=>x.charCodeAt(0));
+// console.log(charCodes);
+// const elems = document.querySelectorAll('good');
+// const values = Array.prototype.map.call(elems, ({ value }) => value);
+// console.log(values)
+['1.1', '2.2e2', '3e300'].map((str) => parseInt(str));
+
+// const strings = ['10', '10', '10'];
+// const numbers = strings.map(parseInt);
+
+// console.log(numbers);
+/*irst =>integer of number ,second nan,third index,other nan
+parseInt(element,index(NAN),arrayof index,...the args) when string
+parseInt(element,index(NAN),NAN) when numbers
+*/
+
+// const strings = ['10', '10', '10','70','6'];
+// const numbers = strings.map(parseInt);
+
+// console.log(numbers);
+// const strings = [10,20,40] 
+// const numbers = strings.map(parseInt);
+
+// console.log(numbers);
