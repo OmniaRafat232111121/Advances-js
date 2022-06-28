@@ -71,8 +71,67 @@ push => 1)add one or more at the end of Array
   
 //   greetings.prepend('Good day', 'Bye');
 //   console.log(greetings);
-/*finding Element*/
+/* pop()*/
+// const numbers=[10,20,300,49];
+// const last=numbers.pop();
+// console.log(last);
+// console.log(numbers.length);
+// const numbers=[];
+// const last=numbers.pop();
+// console.log(last);
+// console.log(numbers.length);
+/*using javascript pop() like array-object */
+// let greetings={
+//     0:'Hi',
+//     1:'Helo',
+//     2:'Good Mornig',
+//     length:3,
+//     removelast(){
+//         return [].pop.call(this);
+//     }
+// };
+// let greeting=greetings.removelast();
+// console.log(greeting);
+// console.log(greetings);
+// const numbers=[10,20,30,40];
+// let number=numbers.shift();
+// console.log({number});
+// console.log(numbers);
+// console.log({length:numbers.length});
+// const numbers=[10,20,30];
+// let number;
+// while((number=numbers.shift())!=undefined){
+//     console.log(number);
+// }
+
+/*mainpulate=>1)Delete an existing element splice(position,num)
+2)insert new element splice(position,0,ele1,ele2)
+3)replace an existing element with another element*/ 
+//  let scores=[1,2,3,4,5];
+//  let deleteScores=scores.splice(0,3);
+//  console.log(scores);
+//  console.log(deleteScores);
+
+// let colors=['red','green','Blue'];
+// colors.splice(3,0,'purple');
+// console.log(colors);
+// colors.splice(1,0,"yellow",'pink');
+// console.log(colors);
+
+
+// let langauages=['c','c++','java','javascript'];
+// langauages.splice(1,2,'python');
+// console.log(langauages)
+
+//includes()check if an array is existing in array or not
+// let numbers=[1,2,3,4];
+// if(numbers.indexOf(2)!==-1){
+//     //process here
+// }
+//includes dont compare between positive and negative
+//High order method in the array()
 /*
-indexof()
-lastindexof()
+map()
+filter()
+
 */
