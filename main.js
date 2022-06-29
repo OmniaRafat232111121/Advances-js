@@ -276,3 +276,19 @@ create an array from array-like or object iterator
 // let evenNumbers=Array.from(even);
 // console.log(evenNumbers)
 
+// const numbers = [1, 2, [3, 4, 5]];
+// const flatNumbers = numbers.flat(1);
+
+// console.log(flatNumbers);
+
+// const numbers = [1, 2, [3, 4, 5, [6, 7]]];
+// const flatNumbers = numbers.flat(2);
+
+// console.log(flatNumbers);
+
+var x=12;
+var y=function(){
+    console.log(x);
+    var x=20;
+};
+y();
