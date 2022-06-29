@@ -135,6 +135,7 @@ map()=>transforming Element in an array
 filter()
 
 */
+
 // let circles=[
 //     10,20,30,50
 // ];
@@ -188,7 +189,11 @@ parseInt(element,index(NAN),NAN) when numbers
 // console.log(numbers);
 // const strings = [10,20,40] 
 // const numbers = strings.map(parseInt);
+/*filter*/
+const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+const result = words.filter(word => word.length > 6);
 
+console.log(result);
 // console.log(numbers);
 // const cssClasses = ['btn', 'btn-primary', 'btn-active'];
 // const btnClass = cssClasses.join(' ');
@@ -216,3 +221,58 @@ parseInt(element,index(NAN),NAN) when numbers
 // let digits = [1,2,3];
 // let alphanumerics = upper.concat(lower, digits);
 // console.log(alphanumerics)
+
+//creating an array
+/*Array.of() ES6 */
+//in ES5 array of constructor new Array()
+// let numbers=new Array(2);
+// console.log(numbers.length);
+// console.log(numbers[1]);
+//when pass  string (value ) not anumber avalue can in array length[0]
+// let numbers=new Array("2");
+// console.log(numbers.length);
+// console.log(numbers[0]);     
+// let numbers=Array.of(4,5);
+// console.log(numbers.length); // 1
+// console.log(numbers[0]); 
+// console.log(numbers[1]); 
+
+/*Array.from()*/ 
+
+/*
+create an array from array-like or object iterator
+*/
+/*array-like is ()=>[]*/
+// function arrayFromArgs() {
+//     return Array.from(arguments);
+// }
+
+// console.log(arrayFromArgs(1, 'A'));
+
+// function addOne() {
+//     return Array.from(arguments, x => x + 1);
+// }
+// console.log(addOne(1, 2, 3));
+/*c) Arra,from() with value()
+*/ 
+// let doubler = {
+//     factor: 2,
+//     double(x) {
+//         return x * this.factor;
+//     }
+// }
+// let scores = [5, 6, 7];
+// let newScores = Array.from(scores, doubler.double, doubler);
+// console.log(newScores);
+
+/*D) create an iterable object*/
+// let even={
+//     *[Symbol.iterator](){
+//         for(let i=0;i<10;i+=2){
+//             yield i;
+//         }
+//     }
+// };
+// let evenNumbers=Array.from(even);
+// console.log(evenNumbers)
+
