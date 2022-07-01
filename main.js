@@ -286,9 +286,115 @@ create an array from array-like or object iterator
 
 // console.log(flatNumbers);
 
-var x=12;
-var y=function(){
-    console.log(x);
-    var x=20;
-};
-y();
+// var x=12;
+// var y=function(){
+//     console.log(x);
+//     var x=20;
+// };
+// y();  
+//undefined
+/*
+ES6 provide
+ destructring properties object or element in array
+
+*/
+//merge an array
+// let arr1=[1,2,3,4,5];
+// let arr2=[6,7,8,9];
+// let newarr=arr1.concat(arr2);
+// console.log(newarr);
+// /*
+// let newArr=[...arr1,...arr2];
+//  */
+//not passing a default value
+// function sum(x=0,y=0){
+//     console.log(x+y);
+// }
+// sum();
+// sum(5,4);
+// let name="omnia";
+// if(name==="johb"){
+//     console.log(name);
+
+/***************************************** */
+/*string Method */
+
+/*search()*/
+/*accept regularepression  nd return index*/
+// let index=str.search(regex);
+/*if not regex it convert to regex*/
+/* if return -1 that not found*/
+// let re=/[A-Z]/;
+// let str="Hi there?How are you";
+// let index=str.search(re);
+// console.log(index);
+// let re = /[0-9]/;
+// let str = 'Hello, JavaScript!';
+// let index = str.search(re);
+
+// console.log(index);
+/* indexof()*/
+// let str = 'finding substring in string';
+// let index = str.indexOf('str');
+
+// console.log(index); // 11
+
+// let str = 'You do not know what you do not know until you know.';
+// let substr = 'know';
+
+// let count = 0;
+
+// let index = str.indexOf(substr);
+// while(index !== -1) {
+//     count++;
+//     index = str.indexOf(substr, index + 1);
+// }
+
+// console.log(count);
+
+
+// let str = 'JS indexOf';
+// let substr = 'js';
+
+// let index = str.toLocaleLowerCase().indexOf(substr.toLocaleLowerCase());
+
+// console.log(index); // 0
+
+// let str = 'JavaScript';
+// let index = str.lastIndexOf('a',2);
+
+// console.log(index);
+// let str = 'Hello, World!';
+// let substr = 'L';
+
+// let index = str.lastIndexOf(substr);
+// console.log(index);
+//includes();
+/*check if a string contains another a string */
+// includes(searchString,[,position])
+
+// let email = 'admin@example.com';
+// console.log(email.includes('@'));
+
+// let str = 'JavaScript String';
+// console.log(str.includes('Script'));
+
+// let str = 'JavaScript String';
+// console.log(str.includes('Script', 5));
+
+/*startwith*/
+// const title = 'Jack and Jill Went Up the Hill';
+
+// console.log(title.startsWith('Jack'));
+// console.log(title.startsWith('jack'));
+// console.log(title.startsWith('Jill', 9));
+/*endwith*/
+// const title = 'Jack and Jill Went Up the Hill';
+// console.log(title.endsWith('Hill'));
+// console.log(title.endsWith('hill'));
+// console.log(title.endsWith('Up', 21))
+/*triming*/
+let str = '  JS trim Good Hello  ';
+let re= str.trim();
+
+console.log(re);
