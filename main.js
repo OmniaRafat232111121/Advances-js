@@ -394,7 +394,70 @@ ES6 provide
 // console.log(title.endsWith('hill'));
 // console.log(title.endsWith('Up', 21))
 /*triming*/
-let str = '  JS trim Good Hello  ';
-let re= str.trim();
+// let str = '  JS trim Good Hello  ';
+// let re= str.trim();
 
-console.log(re);
+// console.log(re);
+/*trimStart() ie aliasing or equlal trimLeft();
+remove whiteSpace from Beging without change The orginalString*/
+// const str = '   JavaScript   ';
+// const re = str.trimStart();
+
+// console.log({ str });
+// console.log({ re });
+/*trimEnd()*/
+// const str = '   JavaScript   ';
+// const re = str.trimEnd();
+
+// console.log({ str });
+// console.log({ re });
+
+/*PadStart()*/
+// let str='1234'.padStart(8,'0');
+// console.log(str); //00001234
+// let str='abc'.padStart(5);
+// console.log({str}) //"  abc"
+// let str = 'abc'.padEnd(5);
+// console.log(str); // "abc  "
+// let str = 'abc'.padEnd(5,'*');
+// console.log(str); // "abc**"
+// let str = 'abc'.padEnd(9,'def');
+// console.log(str); // "abcde"
+// let paragraph = 'Good Morning! How are you? This is John. John is my friend.';
+// let sentences = paragraph.split(/[!,?,.]/);
+// console.log(sentences);
+// const str = 'Hello';
+// const substr = str.slice(3);
+
+// console.log({ substr });
+// const str = 'Hello';
+// const substr = str.slice(-3);
+
+// console.log({ substr });
+
+// const str = 'Omnia';
+// const substr = str.slice();
+
+// console.log({ substr });
+
+// const str = 'Hello';
+// const substr = str.slice(5);
+
+// console.log({ substr });
+
+// const str = 'Hello';
+// const substr = str.slice(0, 2);
+
+// console.log({ substr });
+
+// const str = 'Hello';
+// const substr = str.slice(0, -2);
+
+// // str.length 5
+// // str.length + end = 5 + (-2) = 3
+
+// // console.log({ substr });
+// const str = 'Hello';
+// const substr = str.slice(2, 6);
+
+// console.log({ substr });
